@@ -1,3 +1,4 @@
+// This file is a more organized way to handle file system functions.
 const fs = require('fs');
 const util = require('util');
 
@@ -8,11 +9,7 @@ const readFromFile = util.promisify(fs.readFile);
     @returns {void} 
  */
 
-const writeToFile = (target, content) =>
-  fs.writeFileSync(target, JSON.stringify(content, null, 4), (err) =>
-    err ? console.error(err) : console.info(`\nData written to ${target}`)
-  );
-
+const writeToFile = (target, content) => fs.writeFileSync(target, JSON.stringify(content, null, 4), (err) => err ? console.log(err) : console.log(`\nData written to ${target}`));
 // const writeToFile = util.promisify(fs.readFile);
 /** 
     @param {object} content
@@ -21,15 +18,15 @@ const writeToFile = (target, content) =>
  */
 
 const readAndAppend = (content, file) => {
-  fs.readFile(file, 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
+  fs.readFile(file, 'utf8', (error, data) => {
+    if (error) {
+      console.log(error);
     } else {
-      const parsedData = JSON.parse(data);
-      parsedData.push(content);
-      writeToFile(file, parsedData);
+      const parsed = JSON.parse(data);
+      parsed.push(content);
+      writeToFile(file, parsed);
     }
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+module.exports = { readFromFile, readAndAppend };
