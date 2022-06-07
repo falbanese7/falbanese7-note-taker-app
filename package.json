@@ -2,9 +2,11 @@
   "name": "falbanese7-note-taker-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,13 @@
   },
   "homepage": "https://github.com/falbanese7/falbanese7-note-taker-app#readme",
   "dependencies": {
-    "jest": "^28.1.0"
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "jest": "^28.1.0",
+    "util": "^0.12.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
