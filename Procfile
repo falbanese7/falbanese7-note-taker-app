@@ -1,0 +1,1 @@
+web: node public/assets/js/index.js
