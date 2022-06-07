@@ -8,9 +8,11 @@
 
 This application allows a user to write and save virtual notes to keep track of events, to do's, and/or for any general note-keeping purpose.
 
-![Landing-Page](./images/Screen%20Shot%202022-06-07%20at%202.58.17%20AM.png)
+[Deployed Application](https://fierce-temple-65595.herokuapp.com/)
 
-![Main-Page](./images/Screen%20Shot%202022-06-07%20at%202.58.31%20AM.png)
+![Landing Page](./images/Screen%20Shot%202022-06-07%20at%202.58.17%20AM.png)
+
+![Main Page](./images/Screen%20Shot%202022-06-07%20at%202.58.31%20AM.png)
 
 ## Table of Contents
 
@@ -39,7 +41,7 @@ To use this application:
 
 Below is a gif of the application in action:
 
-![Gif-of-note-taker-in-action](./images/note-taker-in-action.gif)
+![Gif of note taker in action](./images/note-taker-in-action.gif)
 
 ## How to Contribute
 
